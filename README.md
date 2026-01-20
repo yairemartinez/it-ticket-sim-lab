@@ -47,7 +47,7 @@ Each ticket folder is fully self-contained and includes:
 
 ## Tools and Technologies Used
 - Windows Server 2022
-- Windows 10 / Windows 11
+- Windows 11
 - Active Directory Users and Computers (ADUC)
 - Group Policy Management
 - Event Viewer
