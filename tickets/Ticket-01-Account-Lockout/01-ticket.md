@@ -31,7 +31,7 @@ The user successfully logged in after the account was unlocked, and no further l
 Lockout investigation steps were documented, and credential hygiene guidance was noted to prevent recurrence.
 
 ## Time to Resolve
-Approximately 5–10 minutes
+Approximately 10–15 minutes factoring in user interaction.
 
 ## Escalation Notes
 Escalate if lockouts continue or originate from unknown systems.
