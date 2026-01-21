@@ -1,7 +1,3 @@
-# 04-resolution.md — Fix & Validation
-
-This must be **clear and repeatable**.
-
 # Resolution – Unlocking Account and Restoring Access
 
 ## Resolution Steps
