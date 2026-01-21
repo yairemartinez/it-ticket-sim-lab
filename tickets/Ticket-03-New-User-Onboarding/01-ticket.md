@@ -30,7 +30,7 @@ The user successfully logged in and accessed assigned resources.
 Standard onboarding practices were followed to ensure consistency.
 
 ## Time to Resolve
-Approximately 15–20 minutes
+Approximately 20–30 minutes
 
 ## Escalation Notes
 Escalate if access requirements are unclear or additional permissions are requested.
