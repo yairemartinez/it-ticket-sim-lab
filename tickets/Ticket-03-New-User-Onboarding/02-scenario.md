@@ -13,6 +13,6 @@ This scenario simulates a standard help desk onboarding request.
 
 ## User Details
 - Name: ben jones
-- Username: benjones
+- Username: bjones
 - Department: Help Desk
 
