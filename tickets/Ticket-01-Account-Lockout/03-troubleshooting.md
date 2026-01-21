@@ -15,7 +15,6 @@ Active Directory Users and Computers was used to verify the account status.
 
 ---
 
-## Step 2: PowerShell Verification
 PowerShell was used on the domain controller to confirm the lockout status.
 
 ```powershell
@@ -25,3 +24,5 @@ Get-ADUser johndoe -Properties LockedOut | Select Name, LockedOut
 For futher confirmation here is a screenshot of the lockout in a log.
 
 <img width="800" height="400" alt="Screenshot 2026-01-20 232702" src="https://github.com/user-attachments/assets/b06a7cb3-f216-43a4-ba11-fc85df4f72f3" />
+
+The Event ID 4740 entry showed the Caller Computer Name as WIN11-01, confirming the source of the lockout.
