@@ -20,3 +20,8 @@ PowerShell was used on the domain controller to confirm the lockout status.
 
 ```powershell
 Get-ADUser johndoe -Properties LockedOut | Select Name, LockedOut
+```
+## Step 3: Event Viewer Confirmation 
+For futher confirmation here is a screenshot of the lockout in a log.
+
+<img width="800" height="600" alt="Screenshot 2026-01-20 232702" src="https://github.com/user-attachments/assets/b06a7cb3-f216-43a4-ba11-fc85df4f72f3" />
