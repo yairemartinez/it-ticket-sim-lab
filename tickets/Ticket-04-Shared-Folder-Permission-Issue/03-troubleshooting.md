@@ -17,7 +17,7 @@
 - Reviewed the share permissions on \\SRV-CORE01\DeptShare.
 - Confirmed share permissions allowed read access.
 
-![Share permissions](./screenshots/share-permissions.png)
+<img width="800" height="400" alt="Screenshot 2026-01-21 171552" src="https://github.com/user-attachments/assets/e9170d3b-3cd1-4ee9-9363-874d4efdfd85" />
 
 ---
 
@@ -30,5 +30,4 @@
 ---
 
 ## Conclusion
-The issue was determined to be caused by restrictive NTFS permissions despite permissive share permissions.
-
+The access issue was caused by a combination of restrictive NTFS permissions and overly restrictive share permissions. Although the share permissions initially allowed read access, they did not permit write or modify actions. As a result, even after NTFS permissions were corrected, the user’s effective access remained limited until both permission layers were aligned.
