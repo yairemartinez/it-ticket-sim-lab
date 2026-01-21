@@ -19,7 +19,7 @@ The user reported repeated login failures followed by an account lockout message
 - Identified the workstation responsible for the lockout
 
 ## Root Cause
-The account was locked due to repeated authentication attempts using an incorrect password from a domain-joined workstation.
+The account was locked due to repeated authentication attempts using an incorrect password from a domain-joined workstation, triggering the domain account lockout policy.
 
 ## Resolution
 The account was unlocked and access was restored after verifying the source of the lockout.
