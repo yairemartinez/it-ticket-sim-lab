@@ -1,5 +1,3 @@
-# Ticket-14-Client-Disk-Space-Alert/02-scenario.md
-
 # Scenario – Client Disk Space Alert
 
 ## Environment
