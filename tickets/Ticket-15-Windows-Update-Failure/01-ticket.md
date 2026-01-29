@@ -1,5 +1,3 @@
-# Ticket-15-Windows-Update-Failure/01-ticket.md
-
 # Ticket 15 – Windows Update Failing on Client
 
 **Severity:** Medium  
