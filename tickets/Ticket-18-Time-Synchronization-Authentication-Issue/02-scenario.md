@@ -1,5 +1,3 @@
-# Ticket-18-Authentication-Failure-Time-Sync/02-scenario.md
-
 # Scenario – Authentication Failure Due to Time Sync Issue
 
 ## Environment
