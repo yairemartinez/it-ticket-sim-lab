@@ -1,5 +1,3 @@
-# Ticket-16-Multiple-Failed-Login-Attempts/04-resolution.md
-
 # Resolution – Addressing Failed Login Attempts
 
 ## Resolution Steps
