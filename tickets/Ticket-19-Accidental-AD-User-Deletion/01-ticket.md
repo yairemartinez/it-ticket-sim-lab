@@ -11,7 +11,8 @@ A domain user account was accidentally deleted and required recovery.
 The user could not authenticate or access domain resources.
 
 ## Initial Symptoms
-User login failed and account was missing from Active Directory.
+- User login attempt failed with a message indicating the password was incorrect.
+- User reported that credentials had not recently changed.
 
 ## Triage Summary
 - Verified user deletion
