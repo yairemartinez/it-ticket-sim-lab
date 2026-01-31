@@ -11,5 +11,5 @@
 - User account restored successfully.
 - User authentication succeeded.
 
-![User restored](./screenshots/user-restored.png)
+<img width="600" height="400" alt="Screenshot 2026-01-30 234112" src="https://github.com/user-attachments/assets/bd077fad-00ff-4295-8759-25169573e745" />
 
