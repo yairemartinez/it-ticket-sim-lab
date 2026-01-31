@@ -6,14 +6,13 @@
 - **Client Workstation:** WIN11-02 (Windows 11 Pro)
 
 ## Scenario Description
-A domain user reported authentication-related issues when accessing domain resources. Time synchronization was suspected due to Kerberos authentication time sensitivity.
+A domain user reported authentication failures when attempting to access domain resources despite using correct credentials.
 
-This scenario simulates a common investigative workflow where time drift is evaluated as a possible root cause of authentication failures.
+This scenario simulates a common authentication issue caused by system time drift on a domain-joined client.
 
-## Initial Hypothesis
-Kerberos authentication failures can occur if system time drift exceeds the allowable tolerance between client and domain controller.
+## Lab Simulation
+Time synchronization on the client workstation was disrupted, resulting in a mismatch between the client system time and the domain controller.
 
 ## Observed Behavior
-- User was able to log in interactively.
-- Authentication concerns were limited and inconsistent.
-- No immediate Kerberos rejection errors were displayed.
+- Authentication failures occurred.
+- Client system time differed from domain controller time.
