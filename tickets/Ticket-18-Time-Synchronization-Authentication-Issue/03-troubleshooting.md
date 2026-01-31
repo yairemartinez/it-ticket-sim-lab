@@ -1,8 +1,9 @@
 # Troubleshooting – Authentication Failure
 
 ## Initial Symptoms
-- User reported authentication-related access issues.
-- No account lockouts or credential changes were observed.
+- User reported authentication failures with correct credentials.
+- No account lockouts were observed.
+
 
 ---
 
@@ -12,25 +13,22 @@
 
 ---
 
-## Step 2: Review System Time Configuration
-- Verified domain controller system time on SRV-CORE01.
-- Verified client system time on WIN11-02.
-- Confirmed domain policies enforced time synchronization on the client.
+## Step 2: Compare System Time
+- Checked system time on WIN11-02.
+- Checked system time on SRV-CORE01.
+- Identified a time difference between the client and domain controller.
+
+<img width="600" height="400" alt="Screenshot 2026-01-30 155422" src="https://github.com/user-attachments/assets/7a5213d1-5c5a-48d6-8133-064979c2ba07" />
 
 ---
 
-## Step 3: Review Kerberos Ticket State
-- Reviewed Kerberos tickets on the client using `klist`.
-- Confirmed valid Kerberos tickets were present.
-- No evidence of ticket rejection or expiration due to time skew.
+## Step 3: Review Time Synchronization
+- Reviewed Windows Time service status on the client.
+- Confirmed time synchronization was not functioning as expected.
 
----
-
-## Step 4: Validate Access Behavior
-- Confirmed access failures were permission-related rather than authentication-related.
-- Verified failures were consistent with group membership restrictions.
+<img width="600" height="400" alt="Screenshot 2026-01-30 154940" src="https://github.com/user-attachments/assets/f95f4953-5387-42b5-bc49-00cfe29a60eb" />
 
 ---
 
 ## Conclusion
-Time drift was investigated as a potential cause but was ruled out based on system time verificat
+Authentication failures were caused by system time drift on the client workstation, exceeding Kerberos authentication tolerance.
