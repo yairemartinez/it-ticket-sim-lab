@@ -1,9 +1,7 @@
-# Ticket-18-Authentication-Failure-Time-Sync/01-ticket.md
-
 # Ticket 18 – Authentication Failures Due to Time Sync Issue
 
 **Severity:** Medium  
-**Category:** Authentication / System Time  
+**Category:** Authentication / Time Synchronization  
 **Environment:** Lab – Windows Server 2022 AD DS, Windows 11 Pro Client  
 
 ## Affected User
@@ -11,35 +9,35 @@
 - **Workstation:** WIN11-02
 
 ## Summary
-A user reported authentication-related access issues. Time synchronization was investigated as a potential cause due to Kerberos time sensitivity.
+A domain user was unable to authenticate to domain resources due to a system time synchronization issue on the client workstation.
 
 ## User Impact
-- User experienced access issues to domain resources.
-- No complete workstation lockout occurred.
+- User authentication attempts failed despite correct credentials.
+- Access to domain resources was disrupted.
 
 ## Initial Symptoms
-- Authentication concerns reported despite correct credentials.
-- No account lockout events recorded.
+- Login and authentication failures reported.
+- No account lockouts or password changes occurred.
 
 ## Triage Summary
-- Reviewed account status and authentication behavior.
-- Investigated system time synchronization as a potential cause.
-- Verified Kerberos ticket state and access behavior.
+- Verified account status and credentials.
+- Investigated system time configuration and synchronization.
+- Identified time drift on the client system.
 
 ## Root Cause
-Time synchronization issues were investigated and ruled out as the cause of the authentication behavior.
+System time on the client workstation was out of sync with the domain controller, exceeding Kerberos authentication tolerance.
 
 ## Resolution
-No corrective action was required. Domain time synchronization was confirmed to be functioning as intended.
+Time synchronization was restored on the client system, resolving the authentication failures.
 
 ## Validation
-User authentication and Kerberos ticketing continued to function normally.
+User authentication succeeded after system time was corrected.
 
 ## Prevention
-Time synchronization enforcement and diagnostic steps were documented.
+Time synchronization best practices were documented.
 
 ## Time to Resolve
 Approximately 15–20 minutes
 
 ## Escalation Notes
-Escalate if time drift affects multiple systems or Kerberos authentication fails across domain resources.
+Escalate if time synchronization issues affect multiple domain systems.
