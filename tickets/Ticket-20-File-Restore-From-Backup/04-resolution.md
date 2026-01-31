@@ -1,10 +1,14 @@
-# Resolution – Restoring Time Synchronization
+# Resolution – Restoring Deleted File
 
 ## Resolution Steps
-1. Identified time drift on the client workstation.
-2. Restarted the Windows Time service on WIN11-02.
-3. Re-enabled domain time synchronization.
-4. Forced a time resynchronization with the domain controller.
+1. Located the most recent backup containing the deleted file.
+2. Restored the file to its original location.
+3. Verified file contents were intact.
 
-```cmd
-w32tm /resync
+---
+
+## Validation
+- File successfully restored.
+- User confirmed access and data integrity.
+
+![File restored](./screenshots/file-restored.png)
