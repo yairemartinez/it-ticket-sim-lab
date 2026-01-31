@@ -8,6 +8,11 @@
 - When attempting to log in using the affected user account, the system returned a generic “password is incorrect” message.  
 - Given that the credentials were known to be correct and the account was recently functional, this behavior indicated a possible account state issue rather than an actual password error.
 
+## Account Verification
+
+- Checked Active Directory Users and Computers and confirmed the user object was missing.
+- Reviewed Active Directory Administrative Center and located the user under Deleted Objects.
+
 ---
 
 ## Step 1: Verify Deletion
