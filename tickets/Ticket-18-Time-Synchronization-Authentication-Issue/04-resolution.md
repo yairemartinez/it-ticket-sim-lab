@@ -6,6 +6,8 @@
 3. Reviewed Kerberos ticket status to ensure authentication was functioning normally.
 4. Determined no remediation was required.
 
+<img width="600" height="400" alt="Screenshot 2026-01-30 155422" src="https://github.com/user-attachments/assets/dd49d466-6984-4aea-9e6c-01d772526f97" />
+
 ---
 
 ## Validation
