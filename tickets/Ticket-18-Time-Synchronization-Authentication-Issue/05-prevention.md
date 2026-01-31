@@ -1,17 +1,16 @@
-# Prevention – Preventing Time Sync Authentication Issues
+# Prevention – Preventing Time Sync Issues
 
 ## Prevention Steps
 - Ensure domain-joined systems synchronize time with the domain controller.
-- Avoid manual time changes on managed systems.
-- Use diagnostic tools (e.g., `w32tm`, `klist`) to verify time and Kerberos status before remediation.
+- Avoid manual time configuration on managed systems.
+- Monitor Windows Time service health.
 
 ## Operational Notes
-- Kerberos authentication is sensitive to time drift but may be masked by cached credentials.
-- Interactive logon may succeed even when network authentication would fail.
-- Time-related issues should be verified with evidence before corrective action.
+- Kerberos authentication is sensitive to time drift.
+- Time-related issues can present as credential failures.
+- Domain controllers act as the authoritative time source.
 
 ## Escalation Criteria
-Escalate to systems administration if:
-- Time drift is observed across multiple domain clients.
-- Kerberos tickets fail to issue or renew.
-- Authentication failures occur across multiple domain resources.
+- Time drift affecting multiple systems
+- Windows Time service failures on domain controllers
+- Widespread authentication issues
