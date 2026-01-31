@@ -4,6 +4,10 @@
 - User unable to authenticate.
 - User object missing from Active Directory.
 
+## Login Behavior Observed
+- When attempting to log in using the affected user account, the system returned a generic “password is incorrect” message.  
+- Given that the credentials were known to be correct and the account was recently functional, this behavior indicated a possible account state issue rather than an actual password error.
+
 ---
 
 ## Step 1: Verify Deletion
